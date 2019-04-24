@@ -726,6 +726,13 @@
   dependencies:
     axios "*"
 
+"@types/echarts@^4.1.9":
+  version "4.1.9"
+  resolved "https://registry.npm.taobao.org/@types/echarts/download/@types/echarts-4.1.9.tgz#86fdf7ca829879535cf3b1b1490e2f46a0ea0933"
+  integrity sha1-hv33yoKYeVNc87GxSQ4vRqDqCTM=
+  dependencies:
+    "@types/zrender" "*"
+
 "@types/events@*":
   version "3.0.0"
   resolved "http://registry.npm.taobao.org/@types/events/download/@types/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -740,17 +747,34 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/jquery@*":
+"@types/jquery@*", "@types/jquery@^3.3.29":
   version "3.3.29"
-  resolved "http://registry.npm.taobao.org/@types/jquery/download/@types/jquery-3.3.29.tgz#680a2219ce3c9250483722fccf5570d1e2d08abd"
+  resolved "https://registry.npm.taobao.org/@types/jquery/download/@types/jquery-3.3.29.tgz#680a2219ce3c9250483722fccf5570d1e2d08abd"
   integrity sha1-aAoiGc48klBINyL8z1Vw0eLQir0=
   dependencies:
     "@types/sizzle" "*"
+
+"@types/js-cookie@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.npm.taobao.org/@types/js-cookie/download/@types/js-cookie-2.2.2.tgz#84e8848e14d44418726ceb52dd887c7bfe45d678"
+  integrity sha1-hOiEjhTURBhybOtS3Yh8e/5F1ng=
+
+"@types/lodash@^4.14.123":
+  version "4.14.123"
+  resolved "https://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.123.tgz#39be5d211478c8dd3bdae98ee75bb7efe4abfe4d"
+  integrity sha1-Ob5dIRR4yN072umO51u37+Sr/k0=
 
 "@types/minimatch@*":
   version "3.0.3"
   resolved "http://registry.npm.taobao.org/@types/minimatch/download/@types/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha1-PcoOPzOyAPx9ETnAzZbBJoyt/Z0=
+
+"@types/moment-range@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.npm.taobao.org/@types/moment-range/download/@types/moment-range-3.1.2.tgz#19bfcbb7897172a2cb6a8874171e41d023f9a76b"
+  integrity sha1-Gb/Lt4lxcqLLaoh0Fx5B0CP5p2s=
+  dependencies:
+    moment "^2.18.1"
 
 "@types/node@*":
   version "11.13.7"
@@ -783,6 +807,11 @@
   version "1.13.9"
   resolved "http://registry.npm.taobao.org/@types/webpack-env/download/@types/webpack-env-1.13.9.tgz#a67287861c928ebf4159a908d1fb1a2a34d4097a"
   integrity sha1-pnKHhhySjr9BWakI0fsaKjTUCXo=
+
+"@types/zrender@*":
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/@types/zrender/download/@types/zrender-4.0.0.tgz#a6806f12ec4eccaaebd9b0d816f049aca6188fbd"
+  integrity sha1-poBvEuxOzKrr2bDYFvBJrKYYj70=
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0-beta.3":
   version "1.0.0-beta.3"
@@ -1470,7 +1499,7 @@ aws4@^1.8.0:
   resolved "http://registry.npm.taobao.org/aws4/download/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha1-8OAD2cqef1nHpQiUXXsu+aBKVC8=
 
-axios@*, axios@^0.18.0:
+axios@*:
   version "0.18.0"
   resolved "http://registry.npm.taobao.org/axios/download/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
   integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
@@ -2930,7 +2959,7 @@ ecc-jsbn@~0.1.1:
 
 echarts@^4.2.1:
   version "4.2.1"
-  resolved "http://registry.npm.taobao.org/echarts/download/echarts-4.2.1.tgz#9a8ea3b03354f86f824d97625c334cf16965ef03"
+  resolved "https://registry.npm.taobao.org/echarts/download/echarts-4.2.1.tgz#9a8ea3b03354f86f824d97625c334cf16965ef03"
   integrity sha1-mo6jsDNU+G+CTZdiXDNM8Wll7wM=
   dependencies:
     zrender "4.0.7"
@@ -4501,13 +4530,18 @@ joi@^14.3.0:
 
 jquery@^3.4.0:
   version "3.4.0"
-  resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
+  resolved "https://registry.npm.taobao.org/jquery/download/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
   integrity sha1-jeUT+g+kssfS5IpTDibwWWk2798=
 
 js-base64@^2.1.8:
   version "2.5.1"
   resolved "http://registry.npm.taobao.org/js-base64/download/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
   integrity sha1-Hvo57yxfeYC7F4St5KivLeMpESE=
+
+js-cookie@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npm.taobao.org/js-cookie/download/js-cookie-2.2.0.tgz#1b2c279a6eece380a12168b92485265b35b1effb"
+  integrity sha1-Gywnmm7s44ChIWi5JIUmWzWx7/s=
 
 js-levenshtein@^1.1.3:
   version "1.1.6"
@@ -5240,7 +5274,7 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   dependencies:
     minimist "0.0.8"
 
-moment@^2.24.0:
+moment@^2.18.1:
   version "2.24.0"
   resolved "http://registry.npm.taobao.org/moment/download/moment-2.24.0.tgz?cache=0&other_urls=http%3A%2F%2Fregistry.npm.taobao.org%2Fmoment%2Fdownload%2Fmoment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha1-DQVdU/UFKqZTyfbraLtdEr9cK1s=
@@ -7700,11 +7734,6 @@ timsort@^0.3.0:
   resolved "http://registry.npm.taobao.org/timsort/download/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
-tiny-cookie@^1.0:
-  version "1.0.1"
-  resolved "http://registry.npm.taobao.org/tiny-cookie/download/tiny-cookie-1.0.1.tgz#753786079c642a3c3d0b2accad600f8de119ac2a"
-  integrity sha1-dTeGB5xkKjw9CyrMrWAPjeEZrCo=
-
 tinymce@^5.0.3:
   version "5.0.3"
   resolved "http://registry.npm.taobao.org/tinymce/download/tinymce-5.0.3.tgz#40fa8658b5bdf58e7f04c816b38e1b06f96f6cfe"
@@ -8133,13 +8162,6 @@ vue-class-component@^7.0.1, vue-class-component@^7.0.2:
   resolved "http://registry.npm.taobao.org/vue-class-component/download/vue-class-component-7.0.2.tgz#c5f35a91c0e9341532392b84d606a84911fb13bc"
   integrity sha1-xfNakcDpNBUyOSuE1gaoSRH7E7w=
 
-vue-cookie@^1.1.4:
-  version "1.1.4"
-  resolved "http://registry.npm.taobao.org/vue-cookie/download/vue-cookie-1.1.4.tgz#b8b46d112bda9f93a2f47017c2ed5282d2064fda"
-  integrity sha1-uLRtESvan5Oi9HAXwu1SgtIGT9o=
-  dependencies:
-    tiny-cookie "^1.0"
-
 vue-hot-reload-api@^2.3.0:
   version "2.3.3"
   resolved "http://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
@@ -8155,13 +8177,6 @@ vue-loader@^15.7.0:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
-
-vue-lodash@^2.0.2:
-  version "2.0.2"
-  resolved "http://registry.npm.taobao.org/vue-lodash/download/vue-lodash-2.0.2.tgz#08019cc1969ecdf3346017865f86cf4dade0618c"
-  integrity sha1-CAGcwZaezfM0YBeGX4bPTa3gYYw=
-  dependencies:
-    lodash "^4.17.11"
 
 vue-property-decorator@^8.1.0:
   version "8.1.0"
@@ -8676,5 +8691,5 @@ yup@^0.26.10:
 
 zrender@4.0.7:
   version "4.0.7"
-  resolved "http://registry.npm.taobao.org/zrender/download/zrender-4.0.7.tgz#15ae960822f5efed410995d37e5107fe3de10e6d"
+  resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.0.7.tgz#15ae960822f5efed410995d37e5107fe3de10e6d"
   integrity sha1-Fa6WCCL17+1BCZXTflEH/j3hDm0=

@@ -1,7 +1,18 @@
-const path = require('path')
+const devProxy = require('./config/proxy.conf.js')
 
 const host = '0.0.0.0'
 const port = 8085
+
+let proxyObj = {}
+for (let key in devProxy) {
+  proxyObj[key] = {
+    target: devProxy[key].target,
+    changeOrigin: devProxy[key].changeOrigin,
+    pathRewrite: {
+      [`^${key}`]: key
+    }
+  }
+}
 
 module.exports = {
   publicPath: `http://${host}:${port}/`,
@@ -46,15 +57,8 @@ module.exports = {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
       'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
-    }
-    // devServer: {
-    //     proxy: {
-    //       '/api': {
-    //         target: '1',
-    //         ws: true,
-    //         changeOrigin: true
-    //       }
-    //     }
-    // }
+    },
+    proxy: proxyObj,
+    before: app => {}
   }
 }
