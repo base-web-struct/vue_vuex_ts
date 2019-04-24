@@ -1,4 +1,10 @@
+const path = require('path')
+
+const host = '0.0.0.0'
+const port = 8085
+
 module.exports = {
+  baseUrl: `http://${host}:${port}/`,
   // 选项...
   // 当使用基于  HTML 5 history.pushState 的路由时；
   // 当使用 pages 选项构建多页面应用时。
@@ -30,6 +36,17 @@ module.exports = {
   },
   // 反向代理
   devServer:{
+    hotOnly: true,
+    port,
+    host,
+    disableHostCheck: true,
+    clientLogLevel: 'warning',
+    inline: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+      'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
+    }
     // devServer: {
     //     proxy: {
     //       '/api': {
