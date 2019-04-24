@@ -4,7 +4,7 @@ const host = '0.0.0.0'
 const port = 8085
 
 module.exports = {
-  baseUrl: `http://${host}:${port}/`,
+  publicPath: `http://${host}:${port}/`,
   // 选项...
   // 当使用基于  HTML 5 history.pushState 的路由时；
   // 当使用 pages 选项构建多页面应用时。
