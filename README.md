@@ -30,8 +30,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Contact
 #####Wechat
-![contact](./wechat.png)
+![contact](./wechat.jpeg)
 
 #####QQ
-![contact](./QQ.png)
+![contact](./QQ.jpeg)
 
