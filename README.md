@@ -29,9 +29,9 @@ yarn run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Contact
-#####Wechat
-![contact](./wechat.png)
+Wechat
+![contact](./wechat.jpeg)
 
-#####QQ
-![contact](./QQ.png)
+QQ
+![contact](./QQ.jpeg)
 
