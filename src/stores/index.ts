@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import { namespace } from 'vuex-class'
+
 Vue.use(Vuex)
 const files: any = require.context('./modules/', false, /\.ts$/)
 const modules: any = {}

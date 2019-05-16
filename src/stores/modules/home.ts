@@ -3,13 +3,17 @@ const state = {
 }
 
 const actions = {
-  setId (stores: any) {
+  set_id (stores: any): any {
     stores.state.id ++
     return stores.state.id
   }
 }
 
-const getters = {}
+const getters = {
+  get_id (state: any): string {
+    return state.id
+  }
+}
 
 const mutations = {}
 

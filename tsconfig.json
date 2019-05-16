@@ -36,7 +36,11 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx", "types/shims-vue.d.ts", "types/shims-tsx.d.ts"
+    "tests/**/*.tsx",
+    "src/shims/shims-vue.d.ts",
+    "src/shims/shims-tsx.d.ts",
+    "src/shims/vue-config.d.ts",
+    "src/shims/vue-services.d.ts"
   ],
   "exclude": [
     "node_modules"

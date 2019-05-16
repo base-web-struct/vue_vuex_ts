@@ -4,7 +4,7 @@ interface HomeBase<T> {
   getList (data: object): Promise<T>
 }
 
-class HomeService extends Service implements HomeBase<any> {
+export class HomeService extends Service implements HomeBase<any> {
   constructor () {
     super()
   }

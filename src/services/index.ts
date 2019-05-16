@@ -9,24 +9,31 @@ interface HttpBase {
   post (str: string, data: object, resolve: any): void
 }
 
+class AxiosUtil {
+  private static axios: any = null
+  public static getInstance (): any {
+    if (!this.axios) {
+      this.axios = Axios
+      this.axios.timeout = 45000
+      this.axios.interceptors.request.use((config: any) => {
+        return config
+      }, (error: any) => {
+        return Promise.reject(error)
+      })
+      this.axios.interceptors.response.use((response: any) => {
+        return response
+      }, (error: any) => {
+        return Promise.reject(error)
+      })
+    }
+    return this.axios
+  }
+}
+
 export default class BaseService implements HttpBase {
   public http: any = null
   constructor () {
-    this.http = Axios
-
-    this.http.timeout = 45000
-
-    this.http.interceptors.request.use((config: any) => {
-      return config
-    }, (error: any) => {
-      return Promise.reject(error)
-    })
-
-    this.http.interceptors.response.use((response: any) => {
-      return response
-    }, (error: any) => {
-      return Promise.reject(error)
-    })
+    this.http = AxiosUtil.getInstance()
   }
 
   public get (str: string, data: object, resolve: any): void {
